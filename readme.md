@@ -2,8 +2,7 @@
 
 Welcome 👋  
 This is a backend portfolio project created to showcase my skills as a backend developer. It’s **completely free and
-open source**, built with the help of **artificial intelligence** tools to demonstrate modern backend development
-practices using Node.js, Express, and MongoDB.
+open source**, built with the help of **AI** tools to demonstrate modern backend development.
 
 ## 💡 Project Purpose
 
@@ -21,7 +20,7 @@ and modular code to make it easy to understand, extend, or integrate into real-w
 
 ## ⚙️ Getting Started
 
-1.Clone the repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/MohanadBeais/Backend-Portfolio.git
