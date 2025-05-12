@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --primary: 270 60% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+    --chart-1: var(--primary); /* Using primary as chart colors */
+    --chart-2: 250 60% 52%;
+    --chart-3: 220 60% 52%;
+    --chart-4: 290 60% 52%;
+    --chart-5: 310 60% 52%;
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply font-inter antialiased bg-dark text-foreground;
+    }
+}
+
+@layer components {
+    .section-container {
+        @apply container mx-auto px-4 py-20 relative z-10;
+    }
+
+    .section-title {
+        @apply inline-block text-3xl md:text-4xl font-poppins font-bold mb-4 relative;
+    }
+
+    .section-title-bar {
+        @apply h-1 w-full bg-primary mt-2;
+    }
+
+    .section-description {
+        @apply max-w-2xl mx-auto text-light text-opacity-80 mb-16;
+    }
+}
+
+@layer utilities {
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .bg-dark {
+        background-color: #121212;
+    }
+
+    .bg-dark-light {
+        background-color: #1E1E1E;
+    }
+
+    .bg-dark-lighter {
+        background-color: #2D2D2D;
+    }
+
+    .text-light {
+        color: #F0F0F0;
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
